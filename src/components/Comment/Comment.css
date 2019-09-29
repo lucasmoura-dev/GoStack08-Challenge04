@@ -1,0 +1,23 @@
+div.comment {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+div.comment > .avatar {
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+div.comment > .content {
+  background: #EEEEEE;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+div.comment > .content > span.author {
+  font-weight: bold;
+  margin-right: 5px;
+}

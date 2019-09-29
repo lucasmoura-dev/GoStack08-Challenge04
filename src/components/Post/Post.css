@@ -1,0 +1,44 @@
+div.post {
+  display: flex;
+  color: #000;
+  background: #FFF;
+  width: 700px;
+  border-radius: 5px;
+  flex-direction: column;
+  padding: 25px;
+  font-size: 14px;
+}
+
+div.post div.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+img.avatar {
+  width: 80px;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+div.post div.header div.info {
+  display: flex;
+  flex-direction: column;
+}
+
+div.info .author {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+div.info .date {
+  color: #9A9A9A;
+  font-size: 11px;
+}
+
+div.post div.comments {
+  margin-top: 25px;
+  border-top: solid 1px #EEEEEE;
+}
