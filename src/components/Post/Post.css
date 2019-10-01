@@ -9,6 +9,10 @@ div.post {
   font-size: 14px;
 }
 
+div.post + div.post {
+  margin-top: 15px;
+}
+
 div.post div.header {
   display: flex;
   align-items: center;
