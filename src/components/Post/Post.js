@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import './Post.css';
 
 import Comment from '../Comment/Comment';
 
 class Post extends Component {
+  static propTypes = {
+    author: PropTypes.object.isRequired,
+    date: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+    comments: PropTypes.array.isRequired,
+  };
+
+
   render() {
-    console.log(this.props);
     const { author, date, content, comments } = this.props;
     return (
       <div className="post">
