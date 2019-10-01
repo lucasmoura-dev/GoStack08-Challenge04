@@ -9,8 +9,8 @@ class Header extends Component {
   render() {
     return (
       <header id="main-header">
-        <img class="logo" src={Logo} />
-        <div class="profile">
+        <img className="logo" src={Logo} />
+        <div className="profile">
           <span>Meu focinho</span>
           <img src={Profile} />
         </div>

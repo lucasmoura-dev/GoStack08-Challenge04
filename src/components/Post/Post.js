@@ -2,26 +2,32 @@ import React, { Component } from 'react';
 
 import './Post.css';
 
-import Lili from '../../assets/images/dogs/lili.jpg';
-
 import Comment from '../Comment/Comment';
 
 class Post extends Component {
   render() {
+    console.log(this.props);
+    const { author, date, content, comments } = this.props;
     return (
-      <div class="post">
+      <div className="post">
         <div className="header">
-          <img class="avatar" src={Lili} />
-          <div class="info">
-            <div class="author">Lili Moura</div>
-            <div class="date">29 Set 2019</div>
+          <img className="avatar" src={author.avatar} />
+          <div className="info">
+            <div className="author">{author.name}</div>
+            <div className="date">{date}</div>
           </div>
         </div>
-        <div class="content">
-          Pessoal, alguém sabe se a Rocketseat está contratando?
+        <div className="content">
+          {content}
         </div>
         <div className="comments">
-          <Comment />
+          {comments.map(comment => (
+            <Comment 
+              key={comment.id}
+              author={comment.author}
+              content={comment.content}
+            />
+          ))}
         </div>
       </div>
     );
